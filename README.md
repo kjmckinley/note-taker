@@ -1,16 +1,12 @@
-Note Taker
+# Note Taker
 
-## Your Task
-
-Your challenge is to create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
-
-The application’s front end has already been created. It's your job to build the back end, connect the two, and then deploy the entire application to Heroku.
-
-Before you start, clone [the starter code](https://github.com/coding-boot-camp/miniature-eureka).
+## Description
+```
+This program will incorporate the express module package to create a note taking app that allow the user to title, write, save and delete notes.
+```
 
 
 ## User Story
-
 ```
 AS A small business owner
 I WANT to be able to write and save notes
@@ -19,7 +15,6 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 
 ## Acceptance Criteria
-
 ```
 GIVEN a note-taking application
 WHEN I open the Note Taker
@@ -35,6 +30,22 @@ THEN that note appears in the right-hand column
 WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 ```
+
+## Resources
+HTML
+CSS
+JavaScript
+npm Modules
+
+## Demo
+The following images show the web application's appearance and functionality:
+![note-taker demo](./Assests/example.PNG)
+
+## Links
+
+[GitHub](https://github.com/kjmckinley/note-taker.git)
+[Deployed Link](https://kjmckinley.github.io/note-taker/)
+
 
 
 ## Mock-Up
