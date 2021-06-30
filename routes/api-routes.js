@@ -14,13 +14,13 @@ module.exports = function (app) {
 
     app.post("/api/notes", function(req, res) {
 
-        let newNote = req.body;
         let uniqueId = (data.length).toString();
+        let newNote = req.body;
         console.log(uniqueId);
         newNote.id = uniqueId;
         data.push(newNote);
         
-        fs.writeFileSync("./db/db.json", JSON.stringify(data), function(err) {
+        fs.writeFileSync("./develop/db/db.json", JSON.stringify(data), function(err) {
             if (err) throw (err);        
         }); 
     
