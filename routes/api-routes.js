@@ -53,6 +53,7 @@ module.exports = function (app) {
             nextId++;
         }
 
+        // add new note information to the database
         fs.writeFileSync("./develop/db/db.json", JSON.stringify(noteData));
 
         res.json(noteData);
