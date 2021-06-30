@@ -13,6 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use("/Assets", express.static("./Assets"));
 
+//requires server to connect to html and api routes
 require("./routes/html-routes")(app);
 require("./routes/api-routes")(app);
 
