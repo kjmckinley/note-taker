@@ -81,13 +81,13 @@ const handleNoteDelete = (e) => {
   e.stopPropagation();
 
   const note = e.target;
-  const noteId = JSON.parse(note.parentElement.getAttribute('data-note')).id;
+  const idNote = JSON.parse(note.parentElement.getAttribute('data-note')).id;
 
-  if (activeNote.id === noteId) {
+  if (activeNote.id === idNote) {
     activeNote = {};
   }
 
-  deleteNote(noteId).then(() => {
+  deleteNote(idNote).then(() => {
     getAndRenderNotes();
     renderActiveNote();
   });
@@ -143,6 +143,7 @@ const renderNoteList = async (notes) => {
         'text-danger',
         'delete-note'
       );
+      
       delBtnEl.addEventListener('click', handleNoteDelete);
 
       liEl.append(delBtnEl);
