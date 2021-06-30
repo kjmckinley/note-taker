@@ -9,10 +9,12 @@ module.exports = function (app) {
 
     // get requests
     app.get('/api/notes', function(req, res) {
+        
         res.json(noteData);
     });
 
     app.get("/api/notes/:id", function(req, res) {
+
         res.json(noteData[Number(req.params.id)]);
     });
 
@@ -42,11 +44,14 @@ module.exports = function (app) {
         noteData = noteData.filter(currentNote => {
            return currentNote.id != idNote;
         });
+
         for (currentNote of noteData) {
             currentNote.id = newId.toString();
             newId++;
         }
+
         fs.writeFileSync("./develop/db/db.json", JSON.stringify(noteData));
+
         res.json(noteData);
     }); 
 
