@@ -7,6 +7,7 @@ var noteData = JSON.parse(fs.readFileSync("./develop/db/db.json", "utf8"));
 
 module.exports = function (app) {
 
+    // get requests
     app.get('/api/notes', function(req, res) {
         res.json(noteData);
     });
@@ -15,6 +16,7 @@ module.exports = function (app) {
         res.json(noteData[Number(req.params.id)]);
     });
 
+    // post request
     app.post("/api/notes", function(req, res) {
 
         let uniqueId = (noteData.length).toString();
@@ -31,6 +33,7 @@ module.exports = function (app) {
     
     });
 
+    // delete request
     app.delete("/api/notes/:id", function(req, res) {
 
         let newId = 0;
