@@ -44,12 +44,12 @@ module.exports = function (app) {
         // confirms in the console that the selected note was deleted
         console.log(`Note Deleted - ID# ${idNote}`);
 
-        noteData = noteData.filter(currentNote => {
-           return currentNote.id != idNote;
+        noteData = noteData.filter(thisNote => {
+           return thisNote.id != idNote;
         });
 
-        for (currentNote of noteData) {
-            currentNote.id = nextId.toString();
+        for (thisNote of noteData) {
+            thisNote.id = nextId.toString();
             nextId++;
         }
 

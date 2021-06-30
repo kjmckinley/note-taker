@@ -15,13 +15,10 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 
 ## Resources
-HTML
-
-CSS
-
-JavaScript
-
-npm Modules
+- HTML
+- CSS
+- JavaScript
+- npm Modules
 
 
 ## Demo
@@ -31,7 +28,9 @@ The following animations show the web application's appearance and functionality
 
 ## Links
 
-[GitHub](https://github.com/kjmckinley/note-taker.git)
-[Deployed Link](https://kjmckinley.github.io/note-taker/)
-[Heroku Live Link]()
+- [GitHub](https://github.com/kjmckinley/note-taker.git)
+
+- [Deployed Link](https://kjmckinley.github.io/note-taker/)
+
+- [Heroku Live Link]()
 
