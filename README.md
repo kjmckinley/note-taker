@@ -32,7 +32,9 @@ The following animations show the web application's appearance and functionality
 
 - [Deployed Link](https://kjmckinley.github.io/note-taker/)
 
-- [Heroku Live Link]()
+- [Heroku Deployed Application](https://hudson-sorry-75424.herokuapp.com/)
+
+- [Heroku git URL](https://git.heroku.com/hudson-sorry-75424.git)
 
 
 ## Contributer's Repo:
