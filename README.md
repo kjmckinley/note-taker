@@ -34,3 +34,9 @@ The following animations show the web application's appearance and functionality
 
 - [Heroku Live Link]()
 
+
+## Contributer's Repo:
+
+- kjmckinley (me)
+- hoffman1200
+

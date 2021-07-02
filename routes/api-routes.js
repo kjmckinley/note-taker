@@ -18,7 +18,7 @@ module.exports = function (app) {
         res.json(noteData[Number(req.params.id)]);
     });
 
-    // post request
+    // post requests
     app.post("/api/notes", function(req, res) {
 
         let specificId = (noteData.length).toString();
@@ -35,14 +35,14 @@ module.exports = function (app) {
     
     });
 
-    // delete request
+    // delete requests
     app.delete("/api/notes/:id", function(req, res) {
 
         let nextId = 0;
         let idNote = req.params.id;
 
         // confirms in the console that the selected note was deleted
-        console.log(`Note Deleted - ID# ${idNote}`);
+        console.log(`Note Was Deleted - ID# ${idNote}`);
 
         noteData = noteData.filter(thisNote => {
            return thisNote.id != idNote;
